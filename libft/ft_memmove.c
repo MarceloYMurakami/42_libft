@@ -6,7 +6,7 @@
 /*   By: mmurakam <mmurakam@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/25 19:03:34 by mmurakam          #+#    #+#             */
-/*   Updated: 2020/01/26 11:44:31 by mmurakam         ###   ########.fr       */
+/*   Updated: 2020/02/01 22:41:29 by mmurakam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 
 	ptr1 = (unsigned char*)dest;
 	ptr2 = (unsigned char*)src;
-	if (ft_strlen(dest) >= n)
+	if ((unsigned int)ft_strlen(dest) >= (unsigned int)n)
 		i = n;
 	else
 		i = ft_strlen(dest);

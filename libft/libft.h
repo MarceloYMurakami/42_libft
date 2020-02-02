@@ -6,15 +6,13 @@
 /*   By: mmurakam <mmurakam@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/21 19:31:26 by mmurakam          #+#    #+#             */
-/*   Updated: 2020/01/25 20:10:59 by mmurakam         ###   ########.fr       */
+/*   Updated: 2020/02/02 02:06:06 by mmurakam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 # include <string.h>
-# include <unistd.h>
-# include <stddef.h>
 
 typedef struct	s_list
 {

@@ -6,7 +6,7 @@
 /*   By: mmurakam <mmurakam@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/21 19:31:26 by mmurakam          #+#    #+#             */
-/*   Updated: 2020/02/02 18:18:21 by mmurakam         ###   ########.fr       */
+/*   Updated: 2020/02/02 20:33:16 by mmurakam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,5 +43,7 @@ int	ft_isascii(int c);
 int	ft_isprint(int c);
 int	ft_toupper(int c);
 int	ft_tolower(int c);
+void	*ft_calloc(size_t nmemb, size_t size);
+char	*ft_strdup(const char *s);
 
 #endif

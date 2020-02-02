@@ -6,7 +6,7 @@
 /*   By: mmurakam <mmurakam@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/02 17:50:39 by mmurakam          #+#    #+#             */
-/*   Updated: 2020/02/02 17:55:08 by mmurakam         ###   ########.fr       */
+/*   Updated: 2020/02/02 18:01:26 by mmurakam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int	ft_isalnum(int c)
 {
-	if (ft_isalpha != 0 && ft_isdigit != 0)
+	if (ft_isalpha(c) != 0 || ft_isdigit(c) != 0)
 		return (1);
 	else
 		return (0);

@@ -6,12 +6,11 @@
 /*   By: mmurakam <mmurakam@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/01 15:45:46 by mmurakam          #+#    #+#             */
-/*   Updated: 2020/02/01 17:31:58 by mmurakam         ###   ########.fr       */
+/*   Updated: 2020/02/02 17:57:06 by mmurakam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
 size_t	ft_strlcat(char *dest, const char *src, size_t n)
 {

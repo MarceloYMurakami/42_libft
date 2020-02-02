@@ -6,13 +6,11 @@
 /*   By: mmurakam <mmurakam@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/02 13:26:19 by mmurakam          #+#    #+#             */
-/*   Updated: 2020/02/02 17:25:27 by mmurakam         ###   ########.fr       */
+/*   Updated: 2020/02/02 17:57:14 by mmurakam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
-#include <string.h>
 
 int	ft_strncmp(const char *str1, const char *str2, size_t n)
 {

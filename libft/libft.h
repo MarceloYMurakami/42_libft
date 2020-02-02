@@ -6,13 +6,14 @@
 /*   By: mmurakam <mmurakam@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/21 19:31:26 by mmurakam          #+#    #+#             */
-/*   Updated: 2020/02/02 17:57:20 by mmurakam         ###   ########.fr       */
+/*   Updated: 2020/02/02 18:18:21 by mmurakam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
-# include <string.h>
+# include <stdlib.h>
+# include <unistd.h>
 
 typedef struct	s_list
 {
@@ -38,5 +39,9 @@ int	ft_atoi(const char *nptr);
 int	ft_isalpha(int c);
 int	ft_isdigit(int c);
 int	ft_isalnum(int c);
+int	ft_isascii(int c);
+int	ft_isprint(int c);
+int	ft_toupper(int c);
+int	ft_tolower(int c);
 
 #endif

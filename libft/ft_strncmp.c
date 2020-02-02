@@ -1,38 +1,38 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strnstr.c                                       :+:      :+:    :+:   */
+/*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mmurakam <mmurakam@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/02/01 19:38:40 by mmurakam          #+#    #+#             */
-/*   Updated: 2020/02/02 16:28:33 by mmurakam         ###   ########.fr       */
+/*   Created: 2020/02/02 13:26:19 by mmurakam          #+#    #+#             */
+/*   Updated: 2020/02/02 17:25:27 by mmurakam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdio.h>
+#include <string.h>
 
-char *ft_strnstr(const char *big, const char *little, size_t n)
+int	ft_strncmp(const char *str1, const char *str2, size_t n)
 {
-	unsigned int i;
-	unsigned int p;
+	unsigned int sum1;
+	unsigned int sum2;
 
-	i = 0;
-	p = 0;
-	if (*little == '\0')
-		return (char *)big;
-	while (big[p] != '\0' && p < n)
+	sum1 = 0;
+	sum2 = 0;
+	while (n-- > 0)
 	{
-		if (big[p] == *little)
+		if (*str1 != '\0')
 		{
-			i = 1;
-			while (little[i] != '\0' && big[p+i] == little[i] && (size_t)(p + i) < n)
-				i++;
-			if (little[i] == '\0')
-				return ((char *)&big[p]);
+			sum1 = sum1 + *str1;
+			str1++;
 		}
-		p++;
+		if (*str2 != '\0')
+		{
+			sum2 = sum2 + *str2;
+			str2++;
+		}
 	}
-	return (NULL);
+	return (sum1 - sum2);
 }

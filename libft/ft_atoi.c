@@ -1,32 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strrchr.c                                       :+:      :+:    :+:   */
+/*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mmurakam <mmurakam@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/02/01 18:31:22 by mmurakam          #+#    #+#             */
-/*   Updated: 2020/02/02 17:55:42 by mmurakam         ###   ########.fr       */
+/*   Created: 2020/02/02 17:26:59 by mmurakam          #+#    #+#             */
+/*   Updated: 2020/02/02 17:38:40 by mmurakam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strrchr(const char *str, int c)
+int	ft_atoi(const char *nptr)
 {
-	unsigned int	i;
-	unsigned char	*pstr;
+	int n;
+	int sign;
 
-	i = 1;
-	pstr = (unsigned char *)str;
-	while (*pstr++ != '\0')
-		i++;
-	while (i > 0)
+	n = 0;
+	sign = 1;
+	if (*nptr == 45)
 	{
-		pstr--;
-		if (*pstr == c)
-			return ((char *)pstr);
-		i--;
+		sign = -1;
+		nptr++;
 	}
-	return (NULL);
+	while (*nptr >= 48 && *nptr <= 57)
+	{
+		n = n * 10 + *nptr - '0';
+		nptr++;
+	}
+	return (n*sign);
 }

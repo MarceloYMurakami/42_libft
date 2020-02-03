@@ -6,7 +6,7 @@
 /*   By: mmurakam <mmurakam@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/02 17:26:59 by mmurakam          #+#    #+#             */
-/*   Updated: 2020/02/03 08:35:35 by mmurakam         ###   ########.fr       */
+/*   Updated: 2020/02/03 08:39:13 by mmurakam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 int	ft_atoi(const char *nptr)
 {
-	int n;
-	int sign;
+	int				sign;
+	unsigned int	n;
 
 	n = 0;
 	sign = 1;

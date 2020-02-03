@@ -1,36 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strncmp.c                                       :+:      :+:    :+:   */
+/*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mmurakam <mmurakam@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/02/02 13:26:19 by mmurakam          #+#    #+#             */
-/*   Updated: 2020/02/03 20:15:43 by mmurakam         ###   ########.fr       */
+/*   Created: 2017/02/28 12:07:32 by jtoty             #+#    #+#             */
+/*   Updated: 2020/02/03 19:59:26 by mmurakam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <stdlib.h>
+#include <unistd.h>
+#include <string.h>
 #include "libft.h"
 
-int	ft_strncmp(const char *str1, const char *str2, size_t n)
+static void		ft_print_result(int n)
 {
-	unsigned int sum1;
-	unsigned int sum2;
+	if (n > 0)
+		write(1, "1", 1);
+	else if (n < 0)
+		write(1, "-1", 2);
+	else
+		write(1, "0", 1);
+}
 
-	sum1 = 0;
-	sum2 = 0;
-	while (n-- > 0)
-	{
-		if (*str1 != '\0')
-		{
-			sum1 = sum1 + (unsigned char)*str1;
-			str1++;
-		}
-		if (*str2 != '\0')
-		{
-			sum2 = sum2 + (unsigned char)*str2;
-			str2++;
-		}
-	}
-	return (sum1 - sum2);
+int				main()
+{
+		ft_print_result(ft_strncmp("test\200", "test\0", 6));
+	return (0);
 }

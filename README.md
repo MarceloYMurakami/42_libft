@@ -1,5 +1,5 @@
 # 42_libft
-![School](https://img.shields.io/badge/42-Born2Code-lightgrey)
+![School](https://img.shields.io/badge/42-Born2Code-lightgrey) ![project](https://img.shields.io/badge/42-libft-orange)
 
 42 Project - Libft
 

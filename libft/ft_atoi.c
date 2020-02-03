@@ -6,7 +6,7 @@
 /*   By: mmurakam <mmurakam@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/02 17:26:59 by mmurakam          #+#    #+#             */
-/*   Updated: 2020/02/03 08:39:13 by mmurakam         ###   ########.fr       */
+/*   Updated: 2020/02/03 19:25:09 by mmurakam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,9 @@ int	ft_atoi(const char *nptr)
 
 	n = 0;
 	sign = 1;
+	while (*nptr == ' ' || *nptr == '\t' || *nptr == '\f' ||
+			*nptr == '\r' || *nptr == '\n' || *nptr == '\v')
+			nptr++;
 	if (*nptr == 45)
 	{
 		sign = -1;

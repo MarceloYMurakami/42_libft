@@ -5,6 +5,6 @@
 
 Repository for first project in 42_SaoPaulo Coding School - Libft 
 
-In adjust, .gitignore will be add soon.
+In adjust .gitignore will be add soon.
 
 Our first library in C

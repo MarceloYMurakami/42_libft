@@ -1,23 +1,41 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mmurakam <mmurakam@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/01/21 19:15:35 by mmurakam          #+#    #+#             */
-/*   Updated: 2020/02/09 03:43:49 by mmurakam         ###   ########.fr       */
+/*   Created: 2020/02/09 03:27:19 by mmurakam          #+#    #+#             */
+/*   Updated: 2020/02/09 03:45:36 by mmurakam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_strlen(const char *str)
+char	*ft_strjoin(char const *s1, char const *s2)
 {
-	int count;
+	char 			*str;
+	unsigned int	i;
+	unsigned int 	len1;
+	unsigned int 	len2;
 
-	count = 0;
-	while (str[count])
-		count++;
-	return (count);
+	len1 = 0;
+	len2 = 0;
+	i = 0;
+	len1 = ft_strlen(s1);
+	len2 = ft_strlen(s2);
+	str = malloc((len1 + len2 + 1) * sizeof(char));
+	while (len1-- > 0)
+	{
+		str[i] = *s1;
+		i++;
+		s1++;
+	}
+	while (len2-- > 0)
+	{
+		str[i] = *s2;
+		s2++;
+		i++;
+	}
+	return (str);
 }

@@ -6,7 +6,7 @@
 /*   By: mmurakam <mmurakam@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/21 19:31:26 by mmurakam          #+#    #+#             */
-/*   Updated: 2020/02/03 19:50:00 by mmurakam         ###   ########.fr       */
+/*   Updated: 2020/02/09 02:17:10 by mmurakam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,5 +46,6 @@ int	ft_tolower(int c);
 void	*ft_calloc(size_t nmemb, size_t size);
 char	*ft_strdup(const char *s);
 int	ft_strncmp(const char *str1, const char *str2, size_t n);
+char	*ft_substr(char const *s, unsigned int start, size_t len);
 
 #endif

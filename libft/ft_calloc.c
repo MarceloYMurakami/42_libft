@@ -6,7 +6,7 @@
 /*   By: mmurakam <mmurakam@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/02 18:13:26 by mmurakam          #+#    #+#             */
-/*   Updated: 2020/02/02 20:30:44 by mmurakam         ###   ########.fr       */
+/*   Updated: 2020/02/08 21:03:09 by mmurakam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,6 @@ void	*ft_calloc(size_t nmemb, size_t size)
 	if (nmemb == 0 || size == 0)
 		return (NULL);
 	ptr = malloc(nmemb * size);
-	ft_bzero(ptr, sizeof(ptr));
+	ft_bzero(ptr, nmemb);
 	return (ptr);
 }

@@ -6,7 +6,7 @@
 /*   By: mmurakam <mmurakam@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/09 04:33:12 by mmurakam          #+#    #+#             */
-/*   Updated: 2020/02/09 20:52:43 by mmurakam         ###   ########.fr       */
+/*   Updated: 2020/02/13 20:43:10 by mmurakam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 		return (NULL);
 	while (*s1 != '\0' && ft_strchr(set, *s1) != NULL)
 		s1++;
-	while (n > 0 && ft_strrchr(set, (unsigned int)s1[n]) != NULL)
+	while (n > 0 && ft_strrchr(set, s1[n]) != NULL)
 		n--;
 	substr = ft_substr(s1, 0, n + 1);
 	return (substr);

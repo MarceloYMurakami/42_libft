@@ -6,7 +6,7 @@
 /*   By: mmurakam <mmurakam@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/02 17:26:59 by mmurakam          #+#    #+#             */
-/*   Updated: 2020/02/03 19:25:09 by mmurakam         ###   ########.fr       */
+/*   Updated: 2020/02/13 20:46:27 by mmurakam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ int	ft_atoi(const char *nptr)
 	sign = 1;
 	while (*nptr == ' ' || *nptr == '\t' || *nptr == '\f' ||
 			*nptr == '\r' || *nptr == '\n' || *nptr == '\v')
-			nptr++;
+		nptr++;
 	if (*nptr == 45)
 	{
 		sign = -1;
@@ -34,5 +34,5 @@ int	ft_atoi(const char *nptr)
 		n = n * 10 + *nptr - '0';
 		nptr++;
 	}
-	return (n*sign);
+	return (n * sign);
 }

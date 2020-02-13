@@ -6,18 +6,18 @@
 /*   By: mmurakam <mmurakam@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/26 13:10:45 by mmurakam          #+#    #+#             */
-/*   Updated: 2020/01/26 18:52:25 by mmurakam         ###   ########.fr       */
+/*   Updated: 2020/02/13 20:52:56 by mmurakam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_memcmp(const void *str1, const void *str2, size_t n)
+int	ft_memcmp(const void *str1, const void *str2, size_t n)
 {
-	int s1;
-	int s2;
-	unsigned char *ptr1;
-	unsigned char *ptr2;
+	int				s1;
+	int				s2;
+	unsigned char	*ptr1;
+	unsigned char	*ptr2;
 
 	s1 = 0;
 	s2 = 0;
@@ -30,5 +30,5 @@ int ft_memcmp(const void *str1, const void *str2, size_t n)
 		if (*ptr2 != '\0')
 			s2 = s2 + *(ptr2)++;
 	}
-	return (s1-s2);
+	return (s1 - s2);
 }

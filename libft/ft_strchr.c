@@ -6,7 +6,7 @@
 /*   By: mmurakam <mmurakam@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/01 18:23:07 by mmurakam          #+#    #+#             */
-/*   Updated: 2020/02/08 20:32:21 by mmurakam         ###   ########.fr       */
+/*   Updated: 2020/02/13 20:49:05 by mmurakam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,4 +27,3 @@ char	*ft_strchr(const char *str, int c)
 		return ((char *)pstr);
 	return (NULL);
 }
-

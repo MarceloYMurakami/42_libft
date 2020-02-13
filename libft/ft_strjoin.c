@@ -6,7 +6,7 @@
 /*   By: mmurakam <mmurakam@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/09 03:27:19 by mmurakam          #+#    #+#             */
-/*   Updated: 2020/02/09 03:45:36 by mmurakam         ###   ########.fr       */
+/*   Updated: 2020/02/13 20:56:44 by mmurakam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,10 @@
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {
-	char 			*str;
+	char			*str;
 	unsigned int	i;
-	unsigned int 	len1;
-	unsigned int 	len2;
+	unsigned int	len1;
+	unsigned int	len2;
 
 	len1 = 0;
 	len2 = 0;

@@ -6,7 +6,7 @@
 /*   By: mmurakam <mmurakam@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/09 02:06:28 by mmurakam          #+#    #+#             */
-/*   Updated: 2020/02/09 03:26:08 by mmurakam         ###   ########.fr       */
+/*   Updated: 2020/02/16 14:55:32 by mmurakam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	i = 0;
 	j = 0;
 	sub = malloc((len + 1) * sizeof(s[0]));
+	ft_bzero(sub, len);
 	if (len == 0)
 		return (sub);
 	while (i < start)

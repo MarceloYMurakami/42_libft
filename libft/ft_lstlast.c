@@ -1,21 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isdigit.c                                       :+:      :+:    :+:   */
+/*   ft_lstlast.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mmurakam <mmurakam@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/02/02 17:48:00 by mmurakam          #+#    #+#             */
-/*   Updated: 2020/02/18 18:51:48 by mmurakam         ###   ########.fr       */
+/*   Created: 2020/02/19 18:59:38 by mmurakam          #+#    #+#             */
+/*   Updated: 2020/02/19 19:03:44 by mmurakam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isdigit(int c)
+t_list	*ft_lstlast(t_list *lst)
 {
-	if (c >= 48 && c <= 57)
-		return (1);
-	else
-		return (0);
+	t_list	*current;
+
+	if (lst == NULL)
+		return (NULL);
+	current = lst;
+	while (current->next != NULL)
+		current = current->next;
+	return (current);
 }

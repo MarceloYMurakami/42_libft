@@ -1,21 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isdigit.c                                       :+:      :+:    :+:   */
+/*   ft_lstnew.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mmurakam <mmurakam@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/02/02 17:48:00 by mmurakam          #+#    #+#             */
-/*   Updated: 2020/02/18 18:51:48 by mmurakam         ###   ########.fr       */
+/*   Created: 2020/02/19 17:27:01 by mmurakam          #+#    #+#             */
+/*   Updated: 2020/02/19 18:16:26 by mmurakam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isdigit(int c)
+t_list	*ft_lstnew(void *content)
 {
-	if (c >= 48 && c <= 57)
-		return (1);
-	else
-		return (0);
+	t_list	*list;
+
+	list = malloc(sizeof(t_list));
+	if (list == NULL)
+		return (NULL);
+	list->content = content;
+	list->next = NULL;
+	return (list);
 }

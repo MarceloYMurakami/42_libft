@@ -6,7 +6,7 @@
 /*   By: mmurakam <mmurakam@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/21 13:29:15 by mmurakam          #+#    #+#             */
-/*   Updated: 2020/02/21 17:31:19 by mmurakam         ###   ########.fr       */
+/*   Updated: 2020/02/21 17:46:48 by mmurakam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,8 @@ void	ft_lstclear(t_list **lst, void(*del)(void *))
 	while (current != NULL)
 	{
 		next = current->next;
-		ft_lstdelone(current, del);
+		del(current);
+		free(current);
 		current = next;
 	}
 	*lst = NULL;

@@ -6,7 +6,7 @@
 /*   By: mmurakam <mmurakam@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/02 13:26:19 by mmurakam          #+#    #+#             */
-/*   Updated: 2020/02/03 20:15:43 by mmurakam         ###   ########.fr       */
+/*   Updated: 2020/05/10 19:17:04 by mmurakam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,23 +14,14 @@
 
 int	ft_strncmp(const char *str1, const char *str2, size_t n)
 {
-	unsigned int sum1;
-	unsigned int sum2;
+	unsigned int	i;
 
-	sum1 = 0;
-	sum2 = 0;
-	while (n-- > 0)
+	i = 0;
+	while ((str1 || str2) && i < n)
 	{
-		if (*str1 != '\0')
-		{
-			sum1 = sum1 + (unsigned char)*str1;
-			str1++;
-		}
-		if (*str2 != '\0')
-		{
-			sum2 = sum2 + (unsigned char)*str2;
-			str2++;
-		}
+		if (str1[i] != str2[i])
+			return (str1[i] - str2[i]);
+		i++;
 	}
-	return (sum1 - sum2);
+	return (0);
 }

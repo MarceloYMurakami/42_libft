@@ -6,7 +6,7 @@
 /*   By: mmurakam <mmurakam@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/09 03:27:19 by mmurakam          #+#    #+#             */
-/*   Updated: 2020/05/09 20:24:32 by mmurakam         ###   ########.fr       */
+/*   Updated: 2020/05/09 23:23:41 by mmurakam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,11 +18,11 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	unsigned int	i;
 	unsigned int	len;
 
-	i = 0;
 	if (s1 == NULL || s2 == NULL)
 		return (NULL);
+	i = 0;
 	len = ft_strlen(s1);
-	if (!(str = malloc((len + ft_strlen(s1) + 1) * sizeof(char))))
+	if (!(str = malloc((len + ft_strlen(s2) + 1) * sizeof(char))))
 		return (NULL);
 	while (len-- > 0)
 	{

@@ -6,7 +6,7 @@
 /*   By: mmurakam <mmurakam@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/19 18:29:38 by mmurakam          #+#    #+#             */
-/*   Updated: 2020/02/19 18:58:46 by mmurakam         ###   ########.fr       */
+/*   Updated: 2020/05/09 23:38:50 by mmurakam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 int	ft_lstsize(t_list *lst)
 {
-	int count;
-	t_list *current;
+	int		count;
+	t_list	*current;
 
 	count = 1;
 	if (lst == NULL)
@@ -26,5 +26,5 @@ int	ft_lstsize(t_list *lst)
 		count++;
 		current = current->next;
 	}
-	return(count);
+	return (count);
 }

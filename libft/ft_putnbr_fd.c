@@ -6,7 +6,7 @@
 /*   By: mmurakam <mmurakam@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/18 17:56:40 by mmurakam          #+#    #+#             */
-/*   Updated: 2020/05/09 20:52:29 by mmurakam         ###   ########.fr       */
+/*   Updated: 2020/05/09 23:37:25 by mmurakam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ void	ft_putnbr_fd(int n, int fd)
 	if (nbr < 0)
 	{
 		write(fd, "-", sizeof(char));
-		nbr = nbr * - 1;
+		nbr = nbr * -1;
 	}
 	if (nbr >= 10)
 	{

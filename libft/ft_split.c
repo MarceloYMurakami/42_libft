@@ -6,7 +6,7 @@
 /*   By: mmurakam <mmurakam@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/16 15:09:41 by mmurakam          #+#    #+#             */
-/*   Updated: 2020/05/09 20:27:44 by mmurakam         ###   ########.fr       */
+/*   Updated: 2020/05/09 23:41:21 by mmurakam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -92,7 +92,7 @@ char	**ft_split(char const *s, char c)
 	if (s == NULL)
 		return (NULL);
 	i = count_string(s, c);
-	if(!(split = (char **)malloc(sizeof(char *) * (i + 1))))
+	if (!(split = (char **)malloc(sizeof(char *) * (i + 1))))
 		return (NULL);
 	return (split_strings(s, split, c, i));
 }

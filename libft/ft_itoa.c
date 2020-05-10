@@ -6,7 +6,7 @@
 /*   By: mmurakam <mmurakam@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/17 13:18:47 by mmurakam          #+#    #+#             */
-/*   Updated: 2020/05/09 20:28:26 by mmurakam         ###   ########.fr       */
+/*   Updated: 2020/05/09 23:42:06 by mmurakam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int		count_numbers(int i)
 {
-	int n;
+	int				n;
 	unsigned int	j;
 
 	n = 0;
@@ -39,11 +39,11 @@ char	*turn_string(unsigned int num, int sign, int len, char *str)
 		if (ft_isdigit(num % 10 + '0'))
 		{
 			str[len - 1] = num % 10 + '0';
-			num = num /10;
+			num = num / 10;
 			len--;
 		}
 		else
-			num = num /10;
+			num = num / 10;
 	}
 	if (sign == -1)
 		str[0] = '-';
@@ -52,9 +52,9 @@ char	*turn_string(unsigned int num, int sign, int len, char *str)
 
 char	*ft_itoa(int n)
 {
-	int		t;
-	int		sign;
-	char	*str;
+	int				t;
+	int				sign;
+	char			*str;
 	unsigned int	num;
 
 	sign = 1;

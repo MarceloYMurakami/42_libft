@@ -6,18 +6,18 @@
 /*   By: mmurakam <mmurakam@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/21 17:32:35 by mmurakam          #+#    #+#             */
-/*   Updated: 2020/02/21 17:38:50 by mmurakam         ###   ########.fr       */
+/*   Updated: 2020/05/09 23:38:20 by mmurakam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_lstiter(t_list *lst, void(*f)(void *))
+void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
 	t_list	*current;
 
 	if (lst == NULL)
-		return;
+		return ;
 	current = lst;
 	while (current != NULL)
 	{

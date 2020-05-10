@@ -6,7 +6,7 @@
 /*   By: mmurakam <mmurakam@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/21 19:31:26 by mmurakam          #+#    #+#             */
-/*   Updated: 2020/05/09 23:49:15 by mmurakam         ###   ########.fr       */
+/*   Updated: 2020/05/10 19:04:43 by mmurakam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,6 @@
 # define LIBFT_H
 # include <stdlib.h>
 # include <unistd.h>
-# include <stdlib.h>
 
 typedef struct		s_list
 {

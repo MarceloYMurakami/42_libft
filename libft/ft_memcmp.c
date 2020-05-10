@@ -6,16 +6,11 @@
 /*   By: mmurakam <mmurakam@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/26 13:10:45 by mmurakam          #+#    #+#             */
-/*   Updated: 2020/05/09 17:48:24 by mmurakam         ###   ########.fr       */
+/*   Updated: 2020/05/10 19:04:59 by mmurakam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <string.h>
-#include <signal.h>
-#include <stdio.h>
-#include <unistd.h>
-#include <string.h>
 
 int	ft_memcmp(const void *str1, const void *str2, size_t n)
 {

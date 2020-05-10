@@ -6,7 +6,7 @@
 /*   By: mmurakam <mmurakam@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/18 17:40:34 by mmurakam          #+#    #+#             */
-/*   Updated: 2020/02/18 17:43:55 by mmurakam         ###   ########.fr       */
+/*   Updated: 2020/05/09 20:31:55 by mmurakam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,8 +22,8 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	{
 		i = 0;
 		j = ft_strlen((char *)s);
-		str = malloc(j * sizeof(char));
-		ft_bzero(str, j);
+		if (!(str = (char *)ft_calloc(1, j + 1)))
+			return (NULL);
 		while (s[i] != 0)
 		{
 			str[i] = f(i, s[i]);

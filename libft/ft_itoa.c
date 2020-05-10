@@ -6,7 +6,7 @@
 /*   By: mmurakam <mmurakam@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/17 13:18:47 by mmurakam          #+#    #+#             */
-/*   Updated: 2020/02/18 17:35:02 by mmurakam         ###   ########.fr       */
+/*   Updated: 2020/05/09 20:28:26 by mmurakam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,7 +67,8 @@ char	*ft_itoa(int n)
 		num = (unsigned int)(n * sign);
 	}
 	t = t + count_numbers(num);
-	str = malloc((t + 1) * sizeof(char));
+	if (!(str = malloc((t + 1) * sizeof(char))))
+		return (NULL);
 	ft_bzero(str, t + 1);
 	return (turn_string(num, sign, t, str));
 }

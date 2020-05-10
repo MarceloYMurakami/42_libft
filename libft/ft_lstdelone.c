@@ -6,7 +6,7 @@
 /*   By: mmurakam <mmurakam@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/21 13:18:12 by mmurakam          #+#    #+#             */
-/*   Updated: 2020/02/21 17:43:23 by mmurakam         ###   ########.fr       */
+/*   Updated: 2020/05/09 20:54:36 by mmurakam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,5 +17,5 @@ void	ft_lstdelone(t_list *lst, void (*del)(void *))
 	if (lst == NULL)
 		return;
 	del(lst->content);
-	free(lst->content);
+	free(lst);
 }

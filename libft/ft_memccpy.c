@@ -6,7 +6,7 @@
 /*   By: mmurakam <mmurakam@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/25 11:14:53 by mmurakam          #+#    #+#             */
-/*   Updated: 2020/02/13 20:52:20 by mmurakam         ###   ########.fr       */
+/*   Updated: 2020/05/03 20:00:33 by mmurakam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,9 +19,9 @@ void	*ft_memccpy(void *dest, const void *src, int c, size_t n)
 
 	ptr1 = (unsigned char*)dest;
 	ptr2 = (unsigned char*)src;
-	while (n-- > 0 && *ptr2 != c)
+	while (n-- > 0 && *ptr2 != (unsigned char)c)
 		*(ptr1)++ = *(ptr2)++;
-	if (*(ptr2) == c)
+	if (*(ptr2) == (unsigned char)c)
 		*(ptr1)++ = *(ptr2);
 	else
 		return (NULL);

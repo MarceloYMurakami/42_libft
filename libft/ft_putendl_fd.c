@@ -6,7 +6,7 @@
 /*   By: mmurakam <mmurakam@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/18 17:56:40 by mmurakam          #+#    #+#             */
-/*   Updated: 2020/02/18 18:02:34 by mmurakam         ###   ########.fr       */
+/*   Updated: 2020/05/09 20:35:48 by mmurakam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,13 @@
 
 void	ft_putendl_fd(char *s, int fd)
 {
-	while (*s != '\0')
+	if (s != NULL)
 	{
-		write(fd, s, 1);
-		s++;
+		while (*s != '\0')
+		{
+			write(fd, s, sizeof(char));
+			s++;
+		}
 	}
 	write(fd, "\n", 1);
 }

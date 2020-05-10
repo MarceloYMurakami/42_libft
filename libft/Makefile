@@ -6,7 +6,7 @@
 #    By: mmurakam <mmurakam@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/01/25 12:43:19 by mmurakam          #+#    #+#              #
-#    Updated: 2020/05/05 16:04:13 by mmurakam         ###   ########.fr        #
+#    Updated: 2020/04/25 18:40:37 by mmurakam         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -25,8 +25,6 @@ SCRIPTOBJ = ft_memset.o ft_bzero.o ft_memcpy.o ft_memccpy.o ft_memmove.o ft_memc
 SCRIPTABJ = $(NAME)
 
 FLAGS = -Wall -Wextra -Werror
-
-LDFLAGS= -shared
 
 all: $(NAME)
 

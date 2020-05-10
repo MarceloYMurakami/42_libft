@@ -6,7 +6,7 @@
 /*   By: mmurakam <mmurakam@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/18 17:45:49 by mmurakam          #+#    #+#             */
-/*   Updated: 2020/02/18 17:54:40 by mmurakam         ###   ########.fr       */
+/*   Updated: 2020/05/09 20:33:30 by mmurakam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,5 @@
 
 void	ft_putchar_fd(char c, int fd)
 {
-	write(fd, &c, 1);
+	write(fd, &c, sizeof(char));
 }

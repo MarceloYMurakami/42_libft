@@ -6,7 +6,7 @@
 /*   By: mmurakam <mmurakam@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/26 19:25:01 by mmurakam          #+#    #+#             */
-/*   Updated: 2020/02/09 01:59:37 by mmurakam         ###   ########.fr       */
+/*   Updated: 2020/05/09 18:00:44 by mmurakam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ size_t	ft_strlcpy(char *dest, const char *src, size_t n)
 	int	i;
 	int	len;
 
+	if (dest == NULL)
+		return (0);
 	len = 0;
 	i = 0;
 	while (src[i] != '\0')

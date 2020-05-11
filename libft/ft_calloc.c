@@ -6,7 +6,7 @@
 /*   By: mmurakam <mmurakam@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/02 18:13:26 by mmurakam          #+#    #+#             */
-/*   Updated: 2020/05/09 20:03:14 by mmurakam         ###   ########.fr       */
+/*   Updated: 2020/05/11 19:32:03 by mmurakam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,16 @@
 
 void	*ft_calloc(size_t nmemb, size_t size)
 {
-	void	*ptr;
+	void				*ptr;
+	unsigned int		i;
 
+	i = 0;
 	if (!(ptr = malloc((sizeof(char) * (nmemb * size)))))
 		return (NULL);
-	ptr = ft_memset(ptr, 0, (size * nmemb));
+	while (i < (nmemb * size))
+	{
+		((char *)ptr)[i] = 0;
+		i++;
+	}
 	return (ptr);
 }
